@@ -17,7 +17,7 @@
  * Copyright © 2016 Magento. All rights reserved.
  * See COPYING.txt for license details.
  */
-
+echo "hello world";die;
 try {
     require __DIR__ . '/app/bootstrap.php';
 } catch (\Exception $e) {
