@@ -1,0 +1,16 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+       <referenceBlock name="header.container" remove="true" />
+       <referenceBlock name="footer-container" remove="true" />
+       <referenceContainer name="page.wrapper">
+            <container name="custom.header" htmlClass="header_sec" htmlId="header" htmlTag="header" before="header.container">
+                <block class="Magento\Framework\View\Element\Template" name="header.cust.sections" before="-" template="Magento_Theme::html/custom_header.phtml">
+                </block>
+            </container>
+            <container name="custom.footer" htmlClass="footer_sec" htmlId="footer" htmlTag="footer" before="footer.container">
+                <block class="Magento\Framework\View\Element\Template" name="footer.cust.sections" before="-" template="Magento_Theme::html/custom_footer.phtml">
+                </block>
+            </container>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,33 @@
+      <div class="container">
+        <div class="header_inner">
+          <div class="logo">
+            <a href="<?php echo $block->getUrl(''); ?>">Live Rich
+            <span>Apparel</span> </a>
+          </div>
+          <div class="navi_main">
+            <nav class="navbar navbar-default">
+            
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <!--<a class="navbar-brand" href="#">Brand</a>-->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <?php 
+                	echo $this->getLayout()->createBlock("Magento\Theme\Block\Html\Topmenu")->setTemplate("Magento_Theme::html/topmenu.phtml")->toHtml(); 
+                ?>
+                </div><!--navbar-collapse -->
+            </nav>
+            
+          </div>
+          <div class="account_btn_right">
+              <a href="customer/account/">Account</a>
+           </div>
+        </div>
+      </div>
